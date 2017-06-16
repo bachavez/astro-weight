@@ -11,7 +11,8 @@ $(document).on('ready', function() {
     ['Earth', 1],
     ['Venus', 0.9032],
     ['Mercury', 0.377],
-    ['Sun', 27.9]
+    ['Sun', 27.9],
+    ['carolina', 22]
   ];
  // alert('Is this working?');
 //populate the select box with the name of each planet
@@ -31,7 +32,6 @@ function calculateWeight(ev) {
   var $planetInput = $('select[name=selectPlanet]').val();
   var $planetName = $('#planetOptions').find(':selected').text();
   $weightCal = $weightInput * $planetInput;
-  //var $astroWeight = $('#astroweight');
   console.log($weightInput);
 
   if ($weightInput == 0) {
